@@ -12,5 +12,3 @@ It is created by Patrick Coury in December of 2017. Don't follow me at:
   twitter: PatcoSC2
 
 Shoutout to Phaser, which is a HTML5 game framework. Kudos to JavaScript, HTML, CSS, and MAMP (local server environment). Thanks Ron 선생님.
-
-#Harambe © #DicksOutForHarambe ™

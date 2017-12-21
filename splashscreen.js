@@ -1,5 +1,7 @@
 var myClick = document.querySelector('.loadingscreen')
-var introAudio = 
+var introAudio = document.getElementById("myAudio")
+
+introAudio.play();
 
 myClick.addEventListener('click', function(){
 

@@ -60,7 +60,7 @@ function preload() {
 
   //defeat
   game.load.image('defeatscreen', 'assets/defeatscreen.png')
-  game.load.audio('defeatmusic', 'assets/defeatmusic.ogg')
+  game.load.audio('defeatmusic', 'assets/defeatsong.ogg')
 
   //sounds
   game.load.audio('ouchsound', 'assets/trap.ogg');
@@ -78,6 +78,9 @@ function preload() {
   game.load.spritesheet('dancingbanana', 'assets/goldenbananas.png', 37.5, 50, 12)
   game.load.spritesheet('dancingbaby', 'assets/bebe.png', 70, 100, 2)
   game.load.spritesheet('moveharambe', 'assets/movingkong.png', 50, 50, 12)
+
+
+
 
 
 }
@@ -112,13 +115,13 @@ var gamemusic;
 var intensemusic;
 var hitsound;
 var intromusic;
-var defeatmusic;
+var testdefeatmusic;
 var victorymusic;
 
 function customCreate(myMap, myWall, myEnemy){
   function create() {
     //stopaudio
-    
+
     //console.log(game);
     //physics for the game
     game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -189,12 +192,15 @@ function customCreate(myMap, myWall, myEnemy){
     bomb = traps.create(170, 170, 'boom')
 
 
-
+    //testing states
+    // game.state.add('victory', victoryState);
+    // game.state.add('defeat', defeatState);
 
 
     //sounds
     gamemusic = game.add.audio('gamingmusic');
     gamemusic.play();
+
 
     trapsound = game.add.audio('ouchsound');
     eatsound1 = game.add.audio('nomnomsound1')
@@ -204,7 +210,7 @@ function customCreate(myMap, myWall, myEnemy){
     hitsound = game.add.audio('bulletsound')
 
     intromusic = game.add.audio('intromusic')
-    defeatmusic = game.add.audio('defeatmusic')
+    testdefeatmusic = game.add.audio('defeatmusic')
     victorymusic = game.add.audio('victorymusic')
 
     //enemyBullets
@@ -390,7 +396,9 @@ function fire() {
 function enemyHitsPlayer (player,bullet) {
     hitsound.play();
     player.kill();
-
+    setTimeout(function() {
+      this.game.state.start("defeat",true,false)
+    }, 1500)
 }
 
 
@@ -402,10 +410,17 @@ function collectBaby (player, bigBaby) {
   //game.sound.mute = true;
   bigBaby.kill()
   eatsound2.play()
+  setTimeout(function() {
+    this.game.state.start("victory",true,false)
+  }, 1500)
+
 }
 
 function collectDeath (player, bomb) {
   trapsound.play();
   player.kill();
 
+  setTimeout(function() {
+    this.game.state.start("defeat",true,false)
+  }, 1500)
 }

@@ -35,11 +35,11 @@
 
 ## Screenshots
 
-<center>Splash Screen</center>
+## Splash Screen
 ![Alt text](./assets/bananas1.png)
 
-<center>Map Selection</center>
+## Map Selection
 ![Alt text](./assets/bananas2.png)
 
-<center>Gameplay</center>
+## Gameplay
 ![Alt text](./assets/bananas3.png)

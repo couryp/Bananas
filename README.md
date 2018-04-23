@@ -35,4 +35,11 @@
 
 ## Screenshots
 
+Splash Screen
 ![Alt text](./assets/bananas1.png)
+
+Map Selection
+![Alt text](./assets/bananas2.png)
+
+Gameplay
+![Alt text](./assets/bananas3.png)

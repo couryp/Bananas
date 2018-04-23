@@ -1,7 +1,7 @@
 
-# Bananas!
+# [Bananas!](http://couryp-bananas.surge.sh/)
 
-Bananas! is a HTML5 desktop browser game that is built with the Phaser game framework. Based on the life and story of Harambe. Developed in one week. 
+[Bananas!](http://couryp-bananas.surge.sh/) is a HTML5 desktop browser game that is built with the Phaser game framework. Based on the life and story of Harambe. Developed in one week. 
 
 ## Objective / Controls
 

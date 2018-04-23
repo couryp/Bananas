@@ -17,6 +17,7 @@
 
 ## Looking Forward
 
+* Proper loading screen or loader gif
 * Random banana and bomb spawns
 * Restart button
 * Scoreboard / Leaderboard

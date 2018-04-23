@@ -41,7 +41,7 @@ function preload() {
   game.load.image('guard', 'assets/jamesbond.png');
   game.load.image('anubis', 'assets/anubis.png');
   game.load.image('ragnaros', 'assets/ragnaros.png');
-  game.load.image('warlock', 'assets/warlock.png');
+  game.load.image('warlock', 'assets/Warlock.png');
 
   game.load.image('boom', 'assets/bomb.png');
   game.load.image('lostboy', 'assets/baby.png')

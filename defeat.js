@@ -12,5 +12,12 @@ defeatState.prototype = {
     var gameLoss = this.game.add.sprite(0, 0, 'defeatscreen');
     testdefeatmusic.play()
 
+  },
+  update: function () {
+    document.body.onkeyup = function(e){
+      if(e.keyCode == 32){
+          window.location.reload(false)
+      }
+    }
   }
 }
